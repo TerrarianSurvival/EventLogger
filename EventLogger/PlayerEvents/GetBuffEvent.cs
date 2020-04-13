@@ -25,7 +25,7 @@ namespace EventLogger.PlayerEvents
                         int playerIndex = (int)args.number;
                         int buffType = (int)args.number2;
                         int buffTime = (int)args.number3;
-                        string logText = "TELEPORT:" + string.Join(",", Main.player[playerIndex].name, buffType, buffTime);
+                        string logText = "BUFF:" + string.Join(",", Main.player[playerIndex].name, buffType, buffTime);
                         TShock.Log.Info(logText);
                         break;
                     }
